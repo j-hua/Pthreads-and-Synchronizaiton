@@ -1,0 +1,16 @@
+Q1:
+
+
+
+Q2: Same
+
+
+
+Q3: We can not
+
+Q4: We can't, we need to protect s->count++ too
+
+Q5: A lookup_and_insert_if_absent function can be implemented to avoid the case where two threads insert the same element into our hash table. Nevertheless, we still need to protect the counter.
+
+
+Q6:
