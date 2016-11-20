@@ -34,8 +34,49 @@ Q7. How difficult was using TM compared to implementing list locking?
 Answer: Implementing TM is easier since TM simply locks the entire hash table but list locking requires us to change the hash table. 
 
 Q8. What are pros and cons of this approach? 
+
+Answer: 
 Pros:
 This approach is easier to implement since there is no data dependency in each individual threads, zero dependency also translats to maximum utilization of each thread, allowing the program to run faster. 
 Cons:
 It adds a lot of overhead in the main function, joining hashtable is time consuming. Also, with duplicated hash tables, the program consumes a lot more memory.
+
+		Time Measurement Table
+Implementation		1 thread	2 threads	4 threads
+randtrack		10:35		--		-- 
+randtrack_global_lock	10:51		05:884		05:402
+randtrack_tm		11:21		09:522		05:50
+randtrack_list_lock	11:054		05:742		03:26
+randtrack_element_lock	10:626		05:502		02:908
+randtrack_reduction	10:33		05:23		02:798
+
+Q9. For sample_to_skip set to 50, what is the overhead for each parallelization apporach?
+
+Answer:
+	Overhead table
+randtrack		1		
+randtrack_global_lock	1.015		
+randtrack_tm		1.083		
+randtrack_list_lock	1.068		
+randtrack_element_lock	1.027		
+randtrack_reduction	0.998		
+ 
+Q10. How does each approach performs as the number of threads increases? If performance gets worse for a certain case, explain why that may have happened?
+There is no much performance variance when there is one thread running. However, when there are two threads running all methods speed up around 1.8 except randtrack_tm. When there are 4 threads running, global lock and transcational memory have around 1.9x speedup, list lock has a speedup of 3.18 and element lock and reduction have the best performance with speedup of around 3.56. Reduction has highest speedup of 3.7 to be specific. 
+
+Q11. Repeat the data collection above with sample_to_skip set to 100 and give the table. How does this change impact the results compared with when set to 50? why? 
+		Time Measurement Table
+Implementation		1 thread	2 threads	4 threads
+randtrack		20:56		--		-- 
+randtrack_global_lock	20:64		10:98		06:69
+randtrack_tm		21:21		14:54		08:18
+randtrack_list_lock	21:18		10:82		05:88
+randtrack_element_lock	20:79		10:57		05:57
+randtrack_reduction	20:46		10:31		05:48
+
+In general, it takes longer to complete the program with sample_to_skipe set to 100, in many cases around 2 times. Assuming we are inserting the same number of samples, we are skipping tiwce as many as we were skipping thus sometimes it takes approximately twice longer to finish the program.
+
+
+Q12. Which approach should OptsRus ship? Keep in mind that some customers might be using multicores with more than 4 cores, while others might have only one or two cores.
+OptsRus should use reduction method or element lock method since it has overall the best overall performance. However element lock method is preferred for memory demanding customers.  
  

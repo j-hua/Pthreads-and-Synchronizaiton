@@ -1,0 +1,188 @@
+measurement of randtrack is as following:
+20.55user 0.00system 0:20.56elapsed 99%CPU (0avgtext+0avgdata 2972maxresident)k
+0inputs+0outputs (0major+256minor)pagefaults 0swaps
+20.52user 0.00system 0:20.53elapsed 99%CPU (0avgtext+0avgdata 3020maxresident)k
+0inputs+0outputs (0major+257minor)pagefaults 0swaps
+20.50user 0.00system 0:20.50elapsed 99%CPU (0avgtext+0avgdata 2920maxresident)k
+0inputs+0outputs (0major+256minor)pagefaults 0swaps
+20.48user 0.00system 0:20.49elapsed 99%CPU (0avgtext+0avgdata 2972maxresident)k
+0inputs+0outputs (0major+255minor)pagefaults 0swaps
+20.46user 0.00system 0:20.47elapsed 99%CPU (0avgtext+0avgdata 2976maxresident)k
+0inputs+0outputs (0major+258minor)pagefaults 0swaps
+--------------------------------------------------------------
+measurement of randtrack_global_lock is as following:
+1 thread ----
+20.64user 0.00system 0:20.66elapsed 99%CPU (0avgtext+0avgdata 3188maxresident)k
+0inputs+0outputs (0major+269minor)pagefaults 0swaps
+20.65user 0.00system 0:20.66elapsed 99%CPU (0avgtext+0avgdata 3104maxresident)k
+0inputs+0outputs (0major+268minor)pagefaults 0swaps
+20.63user 0.00system 0:20.64elapsed 99%CPU (0avgtext+0avgdata 3144maxresident)k
+0inputs+0outputs (0major+270minor)pagefaults 0swaps
+20.62user 0.00system 0:20.63elapsed 99%CPU (0avgtext+0avgdata 3152maxresident)k
+0inputs+0outputs (0major+272minor)pagefaults 0swaps
+20.62user 0.00system 0:20.63elapsed 99%CPU (0avgtext+0avgdata 3060maxresident)k
+0inputs+0outputs (0major+268minor)pagefaults 0swaps
+2 threads ----
+21.83user 0.02system 0:10.93elapsed 199%CPU (0avgtext+0avgdata 3020maxresident)k
+0inputs+0outputs (0major+270minor)pagefaults 0swaps
+21.88user 0.06system 0:10.98elapsed 199%CPU (0avgtext+0avgdata 3072maxresident)k
+0inputs+0outputs (0major+270minor)pagefaults 0swaps
+21.91user 0.06system 0:11.00elapsed 199%CPU (0avgtext+0avgdata 3092maxresident)k
+0inputs+0outputs (0major+272minor)pagefaults 0swaps
+21.87user 0.01system 0:10.94elapsed 199%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+274minor)pagefaults 0swaps
+21.89user 0.06system 0:10.99elapsed 199%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+273minor)pagefaults 0swaps
+4 threads ----
+24.67user 1.46system 0:06.69elapsed 390%CPU (0avgtext+0avgdata 3040maxresident)k
+0inputs+0outputs (0major+276minor)pagefaults 0swaps
+23.50user 0.44system 0:06.00elapsed 398%CPU (0avgtext+0avgdata 3192maxresident)k
+0inputs+0outputs (0major+279minor)pagefaults 0swaps
+23.38user 0.47system 0:05.98elapsed 398%CPU (0avgtext+0avgdata 3056maxresident)k
+0inputs+0outputs (0major+277minor)pagefaults 0swaps
+23.48user 0.44system 0:06.00elapsed 398%CPU (0avgtext+0avgdata 3192maxresident)k
+0inputs+0outputs (0major+280minor)pagefaults 0swaps
+23.67user 0.44system 0:06.04elapsed 398%CPU (0avgtext+0avgdata 3096maxresident)k
+0inputs+0outputs (0major+276minor)pagefaults 0swaps
+--------------------------------------------------------------
+measurement of randtrack_tm is as following:
+1 thread ----
+21.40user 0.00system 0:21.41elapsed 99%CPU (0avgtext+0avgdata 3288maxresident)k
+0inputs+0outputs (0major+278minor)pagefaults 0swaps
+21.38user 0.00system 0:21.39elapsed 99%CPU (0avgtext+0avgdata 3284maxresident)k
+0inputs+0outputs (0major+277minor)pagefaults 0swaps
+21.37user 0.00system 0:21.38elapsed 99%CPU (0avgtext+0avgdata 3200maxresident)k
+0inputs+0outputs (0major+274minor)pagefaults 0swaps
+21.34user 0.00system 0:21.35elapsed 99%CPU (0avgtext+0avgdata 3288maxresident)k
+0inputs+0outputs (0major+277minor)pagefaults 0swaps
+21.34user 0.00system 0:21.36elapsed 99%CPU (0avgtext+0avgdata 3124maxresident)k
+0inputs+0outputs (0major+274minor)pagefaults 0swaps
+2 threads ----
+29.07user 0.00system 0:14.54elapsed 199%CPU (0avgtext+0avgdata 3336maxresident)k
+0inputs+0outputs (0major+429minor)pagefaults 0swaps
+29.11user 0.00system 0:14.56elapsed 199%CPU (0avgtext+0avgdata 3236maxresident)k
+0inputs+0outputs (0major+431minor)pagefaults 0swaps
+29.10user 0.00system 0:14.56elapsed 199%CPU (0avgtext+0avgdata 3168maxresident)k
+0inputs+0outputs (0major+427minor)pagefaults 0swaps
+29.30user 0.00system 0:14.66elapsed 199%CPU (0avgtext+0avgdata 3144maxresident)k
+0inputs+0outputs (0major+425minor)pagefaults 0swaps
+29.11user 0.00system 0:14.56elapsed 199%CPU (0avgtext+0avgdata 3384maxresident)k
+0inputs+0outputs (0major+432minor)pagefaults 0swaps
+4 threads ----
+33.32user 0.00system 0:08.33elapsed 399%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+0outputs (0major+413minor)pagefaults 0swaps
+32.57user 0.00system 0:08.14elapsed 399%CPU (0avgtext+0avgdata 3308maxresident)k
+0inputs+0outputs (0major+416minor)pagefaults 0swaps
+32.66user 0.00system 0:08.17elapsed 399%CPU (0avgtext+0avgdata 3216maxresident)k
+0inputs+0outputs (0major+416minor)pagefaults 0swaps
+32.70user 0.00system 0:08.18elapsed 399%CPU (0avgtext+0avgdata 3272maxresident)k
+0inputs+0outputs (0major+414minor)pagefaults 0swaps
+32.70user 0.00system 0:08.19elapsed 399%CPU (0avgtext+0avgdata 3356maxresident)k
+0inputs+0outputs (0major+419minor)pagefaults 0swaps
+--------------------------------------------------------------
+measurement of randtrack_list_lock is as following:
+1 thread ----
+21.17user 0.00system 0:21.18elapsed 99%CPU (0avgtext+0avgdata 3788maxresident)k
+0inputs+0outputs (0major+432minor)pagefaults 0swaps
+21.17user 0.00system 0:21.18elapsed 99%CPU (0avgtext+0avgdata 3732maxresident)k
+0inputs+0outputs (0major+429minor)pagefaults 0swaps
+21.16user 0.00system 0:21.16elapsed 99%CPU (0avgtext+0avgdata 3652maxresident)k
+0inputs+0outputs (0major+429minor)pagefaults 0swaps
+21.16user 0.00system 0:21.18elapsed 99%CPU (0avgtext+0avgdata 3876maxresident)k
+0inputs+0outputs (0major+434minor)pagefaults 0swaps
+21.16user 0.00system 0:21.17elapsed 99%CPU (0avgtext+0avgdata 3648maxresident)k
+0inputs+0outputs (0major+428minor)pagefaults 0swaps
+2 threads ----
+21.59user 0.00system 0:10.82elapsed 199%CPU (0avgtext+0avgdata 3736maxresident)k
+0inputs+0outputs (0major+433minor)pagefaults 0swaps
+21.56user 0.00system 0:10.80elapsed 199%CPU (0avgtext+0avgdata 3656maxresident)k
+0inputs+0outputs (0major+431minor)pagefaults 0swaps
+21.64user 0.00system 0:10.85elapsed 199%CPU (0avgtext+0avgdata 3676maxresident)k
+0inputs+0outputs (0major+432minor)pagefaults 0swaps
+21.66user 0.00system 0:10.87elapsed 199%CPU (0avgtext+0avgdata 3760maxresident)k
+0inputs+0outputs (0major+432minor)pagefaults 0swaps
+21.61user 0.00system 0:10.83elapsed 199%CPU (0avgtext+0avgdata 3744maxresident)k
+0inputs+0outputs (0major+431minor)pagefaults 0swaps
+4 threads ----
+24.05user 0.00system 0:06.48elapsed 371%CPU (0avgtext+0avgdata 3912maxresident)k
+0inputs+0outputs (0major+442minor)pagefaults 0swaps
+23.16user 0.00system 0:05.85elapsed 395%CPU (0avgtext+0avgdata 3760maxresident)k
+0inputs+0outputs (0major+438minor)pagefaults 0swaps
+23.17user 0.00system 0:05.85elapsed 395%CPU (0avgtext+0avgdata 3868maxresident)k
+0inputs+0outputs (0major+444minor)pagefaults 0swaps
+23.15user 0.00system 0:05.84elapsed 396%CPU (0avgtext+0avgdata 3684maxresident)k
+0inputs+0outputs (0major+436minor)pagefaults 0swaps
+23.16user 0.00system 0:05.84elapsed 396%CPU (0avgtext+0avgdata 3740maxresident)k
+0inputs+0outputs (0major+438minor)pagefaults 0swaps
+--------------------------------------------------------------
+measurement of randtrack_element_lock is as following:
+1 thread ----
+20.77user 0.00system 0:20.79elapsed 99%CPU (0avgtext+0avgdata 3668maxresident)k
+0inputs+0outputs (0major+400minor)pagefaults 0swaps
+20.76user 0.00system 0:20.77elapsed 99%CPU (0avgtext+0avgdata 3672maxresident)k
+0inputs+0outputs (0major+399minor)pagefaults 0swaps
+20.76user 0.00system 0:20.77elapsed 99%CPU (0avgtext+0avgdata 3624maxresident)k
+0inputs+0outputs (0major+400minor)pagefaults 0swaps
+20.76user 0.00system 0:20.78elapsed 99%CPU (0avgtext+0avgdata 3520maxresident)k
+0inputs+0outputs (0major+397minor)pagefaults 0swaps
+20.76user 0.00system 0:20.77elapsed 99%CPU (0avgtext+0avgdata 3668maxresident)k
+0inputs+0outputs (0major+399minor)pagefaults 0swaps
+2 threads ----
+21.05user 0.00system 0:10.57elapsed 199%CPU (0avgtext+0avgdata 3588maxresident)k
+0inputs+0outputs (0major+400minor)pagefaults 0swaps
+21.03user 0.00system 0:10.56elapsed 199%CPU (0avgtext+0avgdata 3760maxresident)k
+0inputs+0outputs (0major+404minor)pagefaults 0swaps
+21.04user 0.00system 0:10.57elapsed 199%CPU (0avgtext+0avgdata 3684maxresident)k
+0inputs+0outputs (0major+404minor)pagefaults 0swaps
+21.04user 0.00system 0:10.56elapsed 199%CPU (0avgtext+0avgdata 3528maxresident)k
+0inputs+0outputs (0major+399minor)pagefaults 0swaps
+21.08user 0.00system 0:10.58elapsed 199%CPU (0avgtext+0avgdata 3548maxresident)k
+0inputs+0outputs (0major+400minor)pagefaults 0swaps
+4 threads ----
+22.19user 0.00system 0:05.57elapsed 398%CPU (0avgtext+0avgdata 3700maxresident)k
+0inputs+0outputs (0major+409minor)pagefaults 0swaps
+22.20user 0.00system 0:05.57elapsed 398%CPU (0avgtext+0avgdata 3672maxresident)k
+0inputs+0outputs (0major+412minor)pagefaults 0swaps
+22.61user 0.00system 0:05.81elapsed 388%CPU (0avgtext+0avgdata 3672maxresident)k
+0inputs+0outputs (0major+411minor)pagefaults 0swaps
+22.21user 0.00system 0:05.57elapsed 398%CPU (0avgtext+0avgdata 3792maxresident)k
+0inputs+0outputs (0major+413minor)pagefaults 0swaps
+22.54user 0.00system 0:05.75elapsed 392%CPU (0avgtext+0avgdata 3644maxresident)k
+0inputs+0outputs (0major+406minor)pagefaults 0swaps
+--------------------------------------------------------------
+measurement of randtrack_reduction is as following:
+1 thread ----
+20.45user 0.00system 0:20.46elapsed 99%CPU (0avgtext+0avgdata 3264maxresident)k
+0inputs+0outputs (0major+330minor)pagefaults 0swaps
+20.46user 0.00system 0:20.47elapsed 99%CPU (0avgtext+0avgdata 3336maxresident)k
+0inputs+0outputs (0major+333minor)pagefaults 0swaps
+20.45user 0.00system 0:20.46elapsed 99%CPU (0avgtext+0avgdata 3344maxresident)k
+0inputs+0outputs (0major+333minor)pagefaults 0swaps
+20.44user 0.00system 0:20.46elapsed 99%CPU (0avgtext+0avgdata 3412maxresident)k
+0inputs+0outputs (0major+333minor)pagefaults 0swaps
+20.45user 0.00system 0:20.46elapsed 99%CPU (0avgtext+0avgdata 3276maxresident)k
+0inputs+0outputs (0major+333minor)pagefaults 0swaps
+2 threads ----
+20.49user 0.00system 0:10.31elapsed 198%CPU (0avgtext+0avgdata 3684maxresident)k
+0inputs+0outputs (0major+402minor)pagefaults 0swaps
+20.45user 0.00system 0:10.29elapsed 198%CPU (0avgtext+0avgdata 3760maxresident)k
+0inputs+0outputs (0major+404minor)pagefaults 0swaps
+20.45user 0.00system 0:10.30elapsed 198%CPU (0avgtext+0avgdata 3672maxresident)k
+0inputs+0outputs (0major+402minor)pagefaults 0swaps
+20.48user 0.00system 0:10.31elapsed 198%CPU (0avgtext+0avgdata 3684maxresident)k
+0inputs+0outputs (0major+402minor)pagefaults 0swaps
+20.48user 0.00system 0:10.30elapsed 198%CPU (0avgtext+0avgdata 3548maxresident)k
+0inputs+0outputs (0major+400minor)pagefaults 0swaps
+4 threads ----
+21.50user 0.00system 0:05.41elapsed 397%CPU (0avgtext+0avgdata 4468maxresident)k
+0inputs+0outputs (0major+620minor)pagefaults 0swaps
+21.65user 0.00system 0:05.51elapsed 392%CPU (0avgtext+0avgdata 4592maxresident)k
+0inputs+0outputs (0major+624minor)pagefaults 0swaps
+21.50user 0.00system 0:05.41elapsed 397%CPU (0avgtext+0avgdata 4468maxresident)k
+0inputs+0outputs (0major+619minor)pagefaults 0swaps
+21.50user 0.00system 0:05.41elapsed 397%CPU (0avgtext+0avgdata 4644maxresident)k
+0inputs+0outputs (0major+626minor)pagefaults 0swaps
+21.61user 0.00system 0:05.48elapsed 393%CPU (0avgtext+0avgdata 4416maxresident)k
+0inputs+0outputs (0major+619minor)pagefaults 0swaps
+ug208:~/ece454/hw4% 
+
