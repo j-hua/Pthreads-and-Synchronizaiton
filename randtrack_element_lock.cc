@@ -3,7 +3,7 @@
 #include <pthread.h>
 
 #include "defs.h"
-#include "hash_list_lock.h"
+#include "hash_element_lock.h"
 
 #define SAMPLES_TO_COLLECT   10000000
 #define RAND_NUM_UPPER_BOUND   100000
@@ -34,10 +34,13 @@ class sample {
 public:
 	sample *next;
 	unsigned count;
+	pthread_mutex_t ele_mutex;
 
 	sample(unsigned the_key) {
+		next = NULL;
 		my_key = the_key;
 		count = 0;
+		pthread_mutex_init(&ele_mutex, NULL);
 	}
 	;
 	unsigned key() {
@@ -80,9 +83,9 @@ void* thread_routine(void *arg){
 	// process streams starting with different initial numbers
 	for (i = seed_stream_begin; i < seed_stream_end; i++) {
 		rnum = i;
-		//		printf("Thread arg is: %ld, rnum=%d \n", thread_index, rnum);
+		//printf("Thread arg is: %ld, rnum=%d \n", thread_index, rnum);
 
-		// collect a number of samples
+		//collect a number of samples
 		for (j = 0; j < SAMPLES_TO_COLLECT; j++) {
 
 			// skip a number of samples
@@ -97,15 +100,19 @@ void* thread_routine(void *arg){
 			if (!(s = h.lookup(key))) {
 
 				// insert a new element for it into the hash table
+				
 				s = new sample(key);
+				pthread_mutex_lock(&(s->ele_mutex));				
 				h.insert(s);
+				pthread_mutex_unlock(&(s->ele_mutex));
+			}else{
+				pthread_mutex_lock(&(s->ele_mutex));
+				// increment the count for the sample
+				s->count++;
+				pthread_mutex_unlock(&(s->ele_mutex));
 			}
-
-			// increment the count for the sample
-			int index = h.getIndex(key);
-			h.lock(index);
-			s->count++;
-			h.unlock(index);
+			
+			
 		}
 	}
 
