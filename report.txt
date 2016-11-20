@@ -1,16 +1,38 @@
-Q1:
+ECE454,Fall 2016
+Homework 4: Pthreads and Synchronizaiton
+
+HUA,YUFEI 
+ZHU, XIANGYU
+
+Q1. Why is it important to #ifdef out methods and datastructures that aren't used for different versions of randtrack?
+
+Answer: This is to make sure different version will not be intertwined with each other. For example, same method might have different implementation in different versions thus it will cause problems if both methods exist.  
+
+Q2: How difficult was using TM compared to implementing global locks?
+
+Answer: Since the same logic is implemented in both methods, there is not much difference in terms of the difficulty level.
 
 
+Q3: Can you implement this without modifying the hash class, or without knowing its internal implementation?
 
-Q2: Same
+Answer: List level lock implementation highly depends on the hash function logic. Thus without knowing its internal implementation it is not possible to realize list level implementation. 
 
+Q4: Can you properly implement this solely by modifying the hash class methods lookup and insert? Explain.
 
+Answer: No. S->count is incremented outside hash class. This needs to be protected as well. 
 
-Q3: We can not
+Q5: Can you implement this by adding to the hash class a new function lookup_and_insert_if_absent? Explain.
 
-Q4: We can't, we need to protect s->count++ too
+Answer: A lookup_and_insert_if_absent function can be implemented to avoid the case where two threads insert the same element into our hash table. Nevertheless, we still need to protect the counter increment which is done outside the hash class.
 
-Q5: A lookup_and_insert_if_absent function can be implemented to avoid the case where two threads insert the same element into our hash table. Nevertheless, we still need to protect the counter.
+Q6: Can you implement it by adding new methods to hash class lock_list and unlock_list? Explain.
 
+Answer: Yes. We can allocate a lock/mutex to each lish in the hash table. For example, adding it parallel to my_head and my_num_ele, etc. Two new methods lock_list and unlock_list will allow us to manage locks within hash class. 
 
-Q6:
+Q7. How difficult was using TM compared to implementing list locking? 
+
+Answer: Implementing TM is easier since TM simply locks the entire hash table but list locking requires us to change the hash table. 
+
+Q8. What are pros and cons of this approach? 
+
+ 
