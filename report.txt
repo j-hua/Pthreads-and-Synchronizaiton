@@ -34,5 +34,8 @@ Q7. How difficult was using TM compared to implementing list locking?
 Answer: Implementing TM is easier since TM simply locks the entire hash table but list locking requires us to change the hash table. 
 
 Q8. What are pros and cons of this approach? 
-
+Pros:
+This approach is easier to implement since there is no data dependency in each individual threads, zero dependency also translats to maximum utilization of each thread, allowing the program to run faster. 
+Cons:
+It adds a lot of overhead in the main function, joining hashtable is time consuming. Also, with duplicated hash tables, the program consumes a lot more memory.
  
